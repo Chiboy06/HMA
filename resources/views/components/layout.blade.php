@@ -10,11 +10,11 @@
     <meta content="" name="keywords" />
 
      <!-- Favicons -->
-    <link href="{{ asset('img/Ibrahim logo.jpg')}}" rel="icon" style="width: 200%; border-radius: 30px;">
-    <link href="{{ asset('img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+    <link href="{{ secure_asset('img/Ibrahim logo.jpg')}}" rel="icon" style="width: 200%; border-radius: 30px;">
+    <link href="{{ secure_asset('img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <script src="{{ asset('js/app.js') }}"></script>
+    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
+    <script src="{{ secure_asset('js/app.js') }}"></script>
 
 
 
@@ -23,27 +23,27 @@
       rel="stylesheet"
     />
 
-    <link href="{{  asset('css/assets/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet"/>
-    <link href="{{ asset('css/assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('css/assets/vendor/aos/aos.css') }}" rel="stylesheet" />
+    <link href="{{  secure_asset('css/assets/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet"/>
+    <link href="{{ secure_asset('css/assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet" />
+    <link href="{{ secure_asset('css/assets/vendor/aos/aos.css') }}" rel="stylesheet" />
     <link
-      href="{{ asset('css/assets/vendor/bootstrap/css/bootstrap.min.css') }}"
+      href="{{ secure_asset('css/assets/vendor/bootstrap/css/bootstrap.min.css') }}"
       rel="stylesheet"
     />
     <link
-      href="{{ asset('css/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}"
+      href="{{ secure_asset('css/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}"
       rel="stylesheet"
     />
-    <link href="{{ asset('css/assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet" />
+    <link href="{{ secure_asset('css/assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet" />
     <link
-      href="{{ asset('css/assets/vendor/glightbox/css/glightbox.min.css') }}"
+      href="{{ secure_asset('css/assets/vendor/glightbox/css/glightbox.min.css') }}"
       rel="stylesheet"
     />
     <script src="//unpkg.com/alpinejs" defer></script>
-    <link href="{{ asset('css/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet" />
+    <link href="{{ secure_asset('css/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet" />
 
     <!-- Template Main CSS File -->
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
+    <link href="{{ secure_asset('css/style.css') }}" rel="stylesheet" />
     
     </head>
     <body>
@@ -156,14 +156,14 @@
       <x-flash-successLogin/>
 
       <!-- Vendor JS Files -->
-      <script src="{{ asset('vendor/vendor/purecounter/purecounter_vanilla.js') }}"></script>
-      <script src="{{ asset('vendor/vendor/aos/aos.js') }}"></script>
-      <script src="{{ asset('vendor/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-      <script src="{{ asset('vendor/vendor/glightbox/js/glightbox.min.js') }}"></script>
-      <script src="{{ asset('vendor/vendor/swiper/swiper-bundle.min.js') }}"></script>
-      <script src="{{ asset('vendor/vendor/php-email-form/validate.js') }}"></script>
+      <script src="{{ secure_asset('vendor/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+      <script src="{{ secure_asset('vendor/vendor/aos/aos.js') }}"></script>
+      <script src="{{ secure_asset('vendor/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+      <script src="{{ secure_asset('vendor/vendor/glightbox/js/glightbox.min.js') }}"></script>
+      <script src="{{ secure_asset('vendor/vendor/swiper/swiper-bundle.min.js') }}"></script>
+      <script src="{{ secure_asset('vendor/vendor/php-email-form/validate.js') }}"></script>
    
-      <script src="{{ asset('js/main.js') }}"></script>
+      <script src="{{ secure_asset('js/main.js') }}"></script>
 
 
     </body>
