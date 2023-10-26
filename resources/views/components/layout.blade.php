@@ -13,8 +13,8 @@
     <link href="{{ asset('img/Ibrahim logo.jpg')}}" rel="icon" style="width: 200%; border-radius: 30px;">
     <link href="{{ asset('img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-    <script src="{{ mix('js/app.js') }}"></script>
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script src="{{ asset('js/app.js') }}"></script>
 
     @vite('resources/js/app.js')
 
