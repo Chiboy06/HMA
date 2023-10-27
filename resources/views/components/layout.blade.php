@@ -14,7 +14,7 @@
     <link href="{{ secure_asset('img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
     <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
-    <script src="{{ secure_asset('js/app.js') }}"></script>
+    <script src="{{ secure_asset('js/app.js') }}" type="module"></script>
 
 
 

@@ -23,7 +23,7 @@
         </div>
         <div
           class="image col-lg-6 order-1 order-lg-2"
-          style="background-image: url('{{asset("img/hospital4.jpg")}}');  box-shadow: 1px 2px 3px;"
+          style="background-image: url('{{secure_asset("img/hospital4.jpg")}}');  box-shadow: 1px 2px 3px;"
           data-aos="zoom-in"
         ></div>
         

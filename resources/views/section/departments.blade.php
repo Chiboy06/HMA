@@ -59,7 +59,7 @@
                 of diseases and disorders related to the teeth and oral area.
               </p>
               <img
-                src="{{asset('img/dentals.jpg')}}"
+                src="{{secure_asset('img/dentals.jpg')}}"
                 alt=""
                 class="img-fluid"
               />
@@ -91,7 +91,7 @@
                 related to the internal body system. 
               </p>
               <img
-                src="{{asset('img/hospital6.jpg')}}"
+                src="{{secure_asset('img/hospital6.jpg')}}"
                 alt=""
                 class="img-fluid"
               />
@@ -112,7 +112,7 @@
                 
               </p>
               <img
-                src="{{asset('img/hospital4.jpg')}}"
+                src="{{secure_asset('img/hospital4.jpg')}}"
                 alt=""
                 class="img-fluid"
               />
@@ -133,7 +133,7 @@
                 
               </p>
               <img
-                src="{{asset('img/paediatrics.jpg')}}"
+                src="{{secure_asset('img/paediatrics.jpg')}}"
                 alt=""
                 class="img-fluid"
               />

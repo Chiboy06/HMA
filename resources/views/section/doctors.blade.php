@@ -11,7 +11,7 @@
           <div class="member" data-aos="fade-up" data-aos-delay="100">
             <div class="member-img">
               <img
-                src="{{asset("img/doctor-1.jpg")}}"
+                src="{{secure_asset("img/doctor-1.jpg")}}"
                 class="img-fluid"
                 alt=""
               />
@@ -33,7 +33,7 @@
           <div class="member" data-aos="fade-up" data-aos-delay="200">
             <div class="member-img">
               <img
-                src="{{asset('img/doctor-2.jpeg')}}"
+                src="{{secure_asset('img/doctor-2.jpeg')}}"
                 class="img-fluid"
                 alt=""
               />
@@ -55,7 +55,7 @@
           <div class="member" data-aos="fade-up" data-aos-delay="300">
             <div class="member-img">
               <img
-                src="{{asset('img/sec.admin.jpg')}}"
+                src="{{secure_asset('img/sec.admin.jpg')}}"
                 class="img-fluid"
                 alt=""
               />

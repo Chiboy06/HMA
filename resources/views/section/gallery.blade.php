@@ -15,7 +15,7 @@
               class="gallery-lightbox"
               href="assets/img/hospital1.jpg"
               ><img
-                src="{{asset('img/hospital1.jpg')}}"
+                src="{{secure_asset('img/hospital1.jpg')}}"
                 class="img-fluid"
                 alt=""
             /></a>
@@ -25,7 +25,7 @@
               class="gallery-lightbox"
               href="assets/img/hospital2.jpg"
               ><img
-                src="{{asset('img/hospital2.jpg')}}"
+                src="{{secure_asset('img/hospital2.jpg')}}"
                 class="img-fluid"
                 alt=""
             /></a>
@@ -35,7 +35,7 @@
               class="gallery-lightbox"
               href="assets/img/hospital3.jpg"
               ><img
-                src="{{asset('img/hospital3.jpg')}}"
+                src="{{secure_asset('img/hospital3.jpg')}}"
                 class="img-fluid"
                 alt=""
             /></a>
@@ -45,7 +45,7 @@
               class="gallery-lightbox"
               href="assets/img/hospital4.jpg"
               ><img
-                src="{{asset('img/hospital4.jpg')}}"
+                src="{{secure_asset('img/hospital4.jpg')}}"
                 class="img-fluid"
                 alt=""
             /></a>
@@ -55,7 +55,7 @@
               class="gallery-lightbox"
               href="assets/img/hospital5.jpg"
               ><img
-                src="{{asset('img/hospital5.jpg')}}"
+                src="{{secure_asset('img/hospital5.jpg')}}"
                 class="img-fluid"
                 alt=""
             /></a>
@@ -65,7 +65,7 @@
               class="gallery-lightbox"
               href="assets/img/hospital6.jpg"
               ><img
-                src="{{asset('img/hospital6.jpg')}}"
+                src="{{secure_asset('img/hospital6.jpg')}}"
                 class="img-fluid"
                 alt=""
             /></a>
@@ -75,7 +75,7 @@
               class="gallery-lightbox"
               href="assets/img/hospital7.jpg"
               ><img
-                src="assets/img/hospital7.jpg"
+                src="{{secure_asset('assets/img/hospital7.jpg')}}"
                 class="img-fluid"
                 alt=""
             /></a>
