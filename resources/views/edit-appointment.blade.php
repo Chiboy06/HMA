@@ -3,7 +3,7 @@
     <div class="container" style="padding-top: 15rem; padding-bottom:5rem">
         <h1>Edit Appointments</h1>
 
-        <form action="{{ route('editAppointments', $appointment->id) }}" method="POST">
+        <form action="{{ secure_url(route('editAppointments', $appointment->id)) }}" method="POST">
             @csrf
             @method('PUT')
             <div class="row">

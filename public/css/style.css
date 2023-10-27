@@ -1864,4 +1864,10 @@ input-security: n;
   .regForm {
     width: 100%!important;
   }
+  .logo {
+    max-width: 100px!important;
+  }
+  .ibh{
+    display: none!important;
+  }
 }

@@ -64,12 +64,12 @@ class AppointmentController extends Controller
 
         $departmentNames = [
             '0' => 'Select Doctor',
-            '1' => 'Dentist',
-            '2' => 'Pharmacist',
-            '3' => 'Anesthetist',
-            '4' => 'Pediatrician',
-            '5' => 'Lab Attendant/Assistant',
-            '6' => 'General Doctor',
+            '1' => 'Dental Care',
+            '2' => 'Pharmacy',
+            '3' => 'Anasthethics',
+            '4' => 'Paediatrics',
+            '5' => 'Laboratory',
+            '6' => 'General Medicine',
         ];
 
         $selectedDepartmentValue = strip_tags($incomingFields['department']);

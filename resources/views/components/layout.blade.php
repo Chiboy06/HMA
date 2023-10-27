@@ -67,7 +67,7 @@
         <div class="container d-flex align-items-center">
           <a href="{{ route('/') }}" class="logo me-auto"  
           >
-          <h4><span><img src="{{ secure_asset('img/Ibrahim logo.jpg')}}" alt=""></span> Ibrahim Memorial Hospital</h4>
+          <h4><img class="logo" src="{{ secure_asset('img/Ibrahim logo.jpg')}}" alt=""><span class="ibh">Ibrahim Memorial Hospital</span> </h4>
           </a>
           <!-- To uncomment below if I prefer to use an image logo -->
           <!-- <h1 class="logo me-auto"><a href="index.html">Ibrahim Memorial</a></h1> -->
@@ -123,10 +123,10 @@
               {{-- <a href="{{ route('appointment') }}">Book Appointment</a> --}}
               @if(Route::currentRouteName() === 'appointment')
                 <a href="{{ route('view.appointments') }}" class="appointment-btn scrollto"
-               ><span class="d-none d-md-inline">View </span> Appointment</a>
+               ><span class="d-md-inline">View </span> Appointment</a>
               @else
               <a href="{{ route('appointment') }}" class="appointment-btn scrollto"
-              ><span class="d-none d-md-inline">Book </span> Appointment</a>
+              ><span class="d-md-inline">Book </span> Appointment</a>
               @endif
           @else
               {{-- User is not authenticated, display registration link --}}
