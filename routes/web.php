@@ -38,7 +38,7 @@ Route::get('/appointments', function() {
     $appointments = [];
 
     if (auth()->check()) {
-        $appointments = auth()->user()->usersAppointments()->latest()->get();
+        $appointments = auth()->user()->usersAppointments()->orderBy('bookingDate', 'asc')->get();
     };
 
     return view('view-bookings',[

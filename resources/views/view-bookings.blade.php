@@ -54,10 +54,10 @@
                                 <td class="px-4 py-2">{{ $booking->bookingEmail }}</td>
                                 <td class="px-4 py-2">{{ $booking->code }}</td>
                                 <td class="px-4 py-2">
-                                    <a href="{{ route('editAppointment', $booking->id) }}" class="text-green-500 hover:text-blue-700"><i class="bi bi-pencil"></i></a>
+                                    <a href="{{ secure_url(route('editAppointment', $booking->id)) }}" class="text-green-500 hover:text-blue-700"><i class="bi bi-pencil"></i></a>
                                 </td>
                                 <td class="px-4 py-2">
-                                    <form action="{{ route('deleteAppointment', $booking->id) }}" method="POST">
+                                    <form action="{{ secure_url(route('deleteAppointment', $booking->id)) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-link text-red-500 hover:text-red-700" title="Delete">
