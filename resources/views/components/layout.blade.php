@@ -7,7 +7,12 @@
 
     <title>Welcome to Ibrahim Memorial Hospital</title>
     <meta content="" name="description" />
-    <meta content="" name="keywords" />
+    <meta content="ibrahim" name="keywords" />
+    <meta content="ibrahim-memorial" name="keywords" />
+    <meta content="ibrahimmemorialhospital" name="keywords" />
+    <meta content="ibrahim-memorial-app" name="keywords" />
+    <meta content="ibrahim memorial app" name="keywords" />
+    <meta content="ibrahim memorial booking" name="keywords" />
 
      <!-- Favicons -->
     <link href="{{ secure_asset('img/Ibrahim logo.jpg')}}" rel="icon" style="width: 200%; border-radius: 30px;">

@@ -46,13 +46,13 @@ Route::get('/appointments', function() {
     ]);
 })->middleware('auth')->name('view.appointments');
 Route::post('/login', [UserController::class, 'login']);
-Route::post('/register', [UserController::class, 'register']);
+Route::post('/register', [UserController::class, 'register'])->name('register');
 
 Route::post('/create-appointments', [AppointmentController::class, 'createAppointment'])->middleware('auth');
 Route::delete('/bookings/{id}', [AppointmentController::class, 'deleteAppointment'])->name('deleteAppointment');
 Route::get('/filterAppointments', [AppointmentController::class, 'filterAppointments'])->name('filterAppointment');
 Route::get('/editAppointment/{id}', [AppointmentController::class, 'showEditPage'])->name('editAppointment')->middleware('auth');
-Route::post('/editAppointment/{id}', [AppointmentController::class, 'updateAppointment'])->name('editAppointments')->middleware('auth');
+Route::put('/editAppointment/{id}', [AppointmentController::class, 'updateAppointment'])->name('editAppointments')->middleware('auth');
 
 
 

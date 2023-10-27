@@ -4,8 +4,7 @@
         <h1 class="text-2xl font-semibold mb-4">Bookings</h1>
 
             <!-- Filter and Search Form -->
-        <form action="{{ route('filterAppointment') }}" method="GET">
-            <div class="flex px-4  font-semibold justify-items-start place-items-start md:justify-between flex-col h-auto md:items-center bg-blue-500/20 md:flex-row md:flex md:h-20">
+            <form action="{{ route('filterAppointment') }}" method="GET" class="flex flex-col md:flex-row md:items-center justify-between bg-blue-500/20 p-2">
                 <div class="p-2">
                     <label for="filter" class="mr-2">Filter:</label>
                     <select name="filter" id="filter" class="border rounded px-2 py-1 border-blue-500/20">
@@ -20,12 +19,10 @@
                 </div>
                 <div class="p-2">
                     <label for="search" class="mr-2">Search:</label>
-                    <input type="text" name="search" id="search" placeholder="search ... code, name" class="border rounded px-2">
-                    
+                    <input type="text" name="search" id="search" placeholder="Search... code, name" class="border rounded px-2">
                 </div>
                 <button type="submit" class="bg-blue-500/20 btn btn-primary justify-center">Apply</button>
-            </div>
-        </form>
+            </form>
 
         <div class="container p-0 overflow-x-none">
             <div style="overflow-x: scroll">
@@ -57,7 +54,7 @@
                                     <a href="{{ secure_url(route('editAppointment', $booking->id)) }}" class="text-green-500 hover:text-blue-700"><i class="bi bi-pencil"></i></a>
                                 </td>
                                 <td class="px-4 py-2">
-                                    <form action="{{ secure_url(route('deleteAppointment', $booking->id)) }}" method="POST">
+                                    <form action="{{ route('deleteAppointment', $booking->id) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
                                         <button type="submit" class="btn btn-link text-red-500 hover:text-red-700" title="Delete">

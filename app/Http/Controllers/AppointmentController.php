@@ -24,7 +24,7 @@ class AppointmentController extends Controller
         if (auth()->user()->id === $id['user_id']) {
             $id->delete();
         }
-        return redirect('/appointments');
+        return redirect()->route('view.appointments');
     }
 
     public function showEditPage(Appointment $id) {

@@ -8,7 +8,12 @@
         <title>Register Account</title>
         
         <meta content="" name="description" />
-        <meta content="" name="keywords" />
+        <meta content="ibrahim" name="keywords" />
+        <meta content="ibrahim-memorial" name="keywords" />
+        <meta content="ibrahimmemorialhospital" name="keywords" />
+        <meta content="ibrahim-memorial-app" name="keywords" />
+        <meta content="ibrahim memorial app" name="keywords" />
+        <meta content="ibrahim memorial booking" name="keywords" />
 
         <link href="{{ secure_asset('img/Ibrahim logo.jpg') }}" rel="icon" style="width: 100%;">
         <link href="{{ secure_asset('img/apple-touch-icon.png') }}" rel="apple-touch-icon">
@@ -21,9 +26,7 @@
     <body style="background-color: #32969a;">
         <div style="display: grid; height: 100vh; align-content: center;">
             <div class="login" data-aos="fade-right=">
-                <div id="img-flex">
-                    <!-- <img src="assets/img/Ibrahim logo.jpg" alt="" style="width: 20%; height: 20%;"> -->
-            
+                <div id="img-flex">            
                     <form action="/register" method="POST" class="regForm" style="padding:10px 0; justify-content: center; background-color: #fff; width: 500px; border-radius: 0px;">
                         @csrf
                         <div class="container" data-aos="fade-up">

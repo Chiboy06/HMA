@@ -14,7 +14,7 @@
 
       <div class="row">
         <div class="col-lg-6" data-aos="fade-right">
-          <img src="assets/img/hospitalpic.png" class="img-fluid" alt="" / style="width: 100%; height: 40vh;">
+          <img src="{{secure_url(asset('assets/img/hospitalpic.png')) }}" class="img-fluid" alt="" style="width: 100%; height: 40vh;">
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
           <h3>
