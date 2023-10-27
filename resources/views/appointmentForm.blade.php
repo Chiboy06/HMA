@@ -87,13 +87,11 @@
                   style="margin: 0 0 10px"
                   name="message"
                   rows="5"
-                  placeholder="Leave a Message"
+                  placeholder="Leave your Complaint"
                 ></textarea>
               </div>
               <div class="text-center">
-                  {{-- <a href="{{ route('/') }}" style="color: white;"> --}}
                     <button style="padding: 15px; border-style: none; background-color: #65c9cd; color: white; border-radius: 5px;">Book Appointment</button>
-                  {{-- </a> --}}
               </div>
             </form>
           </div>

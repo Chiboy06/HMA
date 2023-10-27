@@ -1,7 +1,7 @@
 <x-layout>
 
     <div class="container" style="padding-top: 15rem; padding-bottom:5rem">
-        <h1>Edit Post</h1>
+        <h1>Edit Appointments</h1>
 
         <form action="{{ route('editAppointments', $appointment->id) }}" method="POST">
             @csrf
@@ -14,7 +14,7 @@
                   class="form-control"
                   id="bookingName"
                   placeholder="Your Name"
-                  value="{{$appointment->bookingName}}"
+                  value="{{ old('bookingName', $appointment->bookingName) }}"
                   required
                 />
               </div>
@@ -24,7 +24,7 @@
                   class="form-control"
                   name="bookingEmail"
                   id="email"
-                  value="{{$appointment->bookingEmail}}"
+                  value="{{ old('bookingEmail', $appointment->bookingEmail) }}"
                   placeholder="Your Email Address"
                   required
                 />
@@ -35,7 +35,7 @@
                   class="form-control"
                   name="phoneNo"
                   id="phone"
-                  value="{{$appointment->phoneNo}}"
+                  value="{{ old('phoneNo', $appointment->phoneNo) }}"
                   placeholder="Your Phone Number"
                   required
                 />
@@ -46,7 +46,7 @@
                 <input
                   type="date"
                   name="bookingDate"
-                  value="{{$appointment->bookingDate}}"
+                  value="{{ old('bookingDate', $appointment->bookingDate) }}"
                   class="form-control datepicker"
                   id="date"
                   placeholder="Appointment Date"
@@ -85,13 +85,11 @@
                 name="message"
                 value="{{$appointment->message}}"
                 rows="5"
-                placeholder="Leave a Message"
+                placeholder="Leave your Complaint"
               >{{ old('message', $appointment->message) }}</textarea>
             </div>
             <div class="text-center">
-                {{-- <a href="{{ route('/') }}" style="color: white;"> --}}
-                  <button style="padding: 15px; border-style: none; background-color: #65c9cd; color: white; border-radius: 5px;">Book Appointment</button>
-                {{-- </a> --}}
+              <button style="padding: 15px; border-style: none; background-color: #65c9cd; color: white; border-radius: 5px;">Book Appointment</button>
             </div>
           </form>
     </div>

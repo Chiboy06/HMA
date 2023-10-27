@@ -10,12 +10,12 @@
     <meta content="" name="description" />
     <meta content="" name="keywords" />
 
-    <link href="{{ asset('img/Ibrahim logo.jpg') }}" rel="icon" style="width: 100%;">
-    <link href="{{ asset('img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <link href="{{ secure_asset('img/Ibrahim logo.jpg') }}" rel="icon" style="width: 100%;">
+    <link href="{{ secure_asset('img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
 
      
-    <link href="{{asset('css/style.css')}}" rel="stylesheet" />
+    <link href="{{secure_asset('css/style.css')}}" rel="stylesheet" />
     {{-- @vite('resources/css/app.css') --}}
  
 
@@ -30,7 +30,7 @@
                 @csrf
                 <div class="container" data-aos="fade-up">
                     <div class="section-title" style="font-size: x-large; padding: 20px">
-                      <img src="{{ asset('img/Ibrahim logo.jpg') }}" alt="" style="width: 150px; border-radius: 10px; box-shadow: 1px 2px 3px;">
+                      <img src="{{ secure_asset('img/Ibrahim logo.jpg') }}" alt="" style="width: 150px; border-radius: 10px; box-shadow: 1px 2px 3px;">
                       <h2>Login</h2>
                 
                     </div>
