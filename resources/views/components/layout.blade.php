@@ -67,7 +67,7 @@
         <div class="container d-flex align-items-center">
           <a href="{{ route('/') }}" class="logo me-auto"  
           >
-          <h4><span><img src="assets/img/Ibrahim logo.jpg" alt=""></span> Ibrahim Memorial Hospital</h4>
+          <h4><span><img src="{{ secure_asset('img/Ibrahim logo.jpg')}}" alt=""></span> Ibrahim Memorial Hospital</h4>
           </a>
           <!-- To uncomment below if I prefer to use an image logo -->
           <!-- <h1 class="logo me-auto"><a href="index.html">Ibrahim Memorial</a></h1> -->
