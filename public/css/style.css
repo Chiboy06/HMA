@@ -631,7 +631,7 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
 
 .section-title h2 {
@@ -1858,4 +1858,10 @@ input-security: n;
   padding-top: 10px;
   text-align: center;
   font-size: 13px;
+}
+
+@media screen and (max-width: 540px) {
+  .regForm {
+    width: 100%!important;
+  }
 }

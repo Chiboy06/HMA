@@ -27,48 +27,50 @@
             </div>
         </form>
 
-        <div class="container p-0 overflow-x-scroll">
-            <table class="table-auto w-full md:w-fit overflow-x-auto border border-blue-500/20">
-            <thead>
-                <tr>
-                    <th class="px-4 py-2">Date of Appointment</th>
-                    <th class="px-4 py-2">Doctor</th>
-                    <th class="px-4 py-2">Department</th>
-                    <th class="px-4 py-2">Complaint</th>
-                    <th class="px-4 py-2">Phone Number</th>
-                    <th class="px-4 py-2">Email</th>
-                    <th class="px-4 py-2">Appointment Code</th>
-                    <th class="px-4 py-2">Edit</th>
-                    <th class="px-4 py-2">Delete</th> {{-- Add a column for actions --}}
-                </tr>
-            </thead>
-            <tbody>
-                @foreach($bookings as $booking)
-                    <tr>
-                        <td class="px-4 py-2">{{ $booking->bookingDate }}</td>
-                        <td class="px-4 py-2">{{ $booking->doctor }}</td>
-                        <td class="px-4 py-2">{{ $booking->department }}</td>
-                        <td class="px-4 py-2">{{ $booking->message }}</td>
-                        <td class="px-4 py-2">{{ $booking->phoneNo }}</td>
-                        <td class="px-4 py-2">{{ $booking->bookingEmail }}</td>
-                        <td class="px-4 py-2">{{ $booking->code }}</td>
-                        <td class="px-4 py-2">
-                            <a href="{{ route('editAppointment', $booking->id) }}" class="text-green-500 hover:text-blue-700"><i class="bi bi-pencil"></i></a>
-                        </td>
-                        <td class="px-4 py-2">
-                            <form action="{{ route('deleteAppointment', $booking->id) }}" method="POST">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-link text-red-500 hover:text-red-700" title="Delete">
-                                    <i class="bi bi-trash text-red-500 hover:text-red-700"></i>
-                                </button>
-                            </form>
-                        </td>
+        <div class="container p-0 overflow-x-none">
+            <div style="overflow-x: scroll">
+                <table class="table-auto w-full md:w-fit overflow-x-auto border border-blue-500/20">
+                    <thead>
+                        <tr>
+                            <th class="px-4 py-2">Date of Appointment</th>
+                            <th class="px-4 py-2">Doctor</th>
+                            <th class="px-4 py-2">Department</th>
+                            <th class="px-4 py-2">Complaint</th>
+                            <th class="px-4 py-2">Phone Number</th>
+                            <th class="px-4 py-2">Email</th>
+                            <th class="px-4 py-2">Appointment Code</th>
+                            <th class="px-4 py-2">Edit</th>
+                            <th class="px-4 py-2">Delete</th> {{-- Add a column for actions --}}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach($bookings as $booking)
+                            <tr>
+                                <td class="px-4 py-2">{{ $booking->bookingDate }}</td>
+                                <td class="px-4 py-2">{{ $booking->doctor }}</td>
+                                <td class="px-4 py-2">{{ $booking->department }}</td>
+                                <td class="px-4 py-2">{{ $booking->message }}</td>
+                                <td class="px-4 py-2">{{ $booking->phoneNo }}</td>
+                                <td class="px-4 py-2">{{ $booking->bookingEmail }}</td>
+                                <td class="px-4 py-2">{{ $booking->code }}</td>
+                                <td class="px-4 py-2">
+                                    <a href="{{ route('editAppointment', $booking->id) }}" class="text-green-500 hover:text-blue-700"><i class="bi bi-pencil"></i></a>
+                                </td>
+                                <td class="px-4 py-2">
+                                    <form action="{{ route('deleteAppointment', $booking->id) }}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-link text-red-500 hover:text-red-700" title="Delete">
+                                            <i class="bi bi-trash text-red-500 hover:text-red-700"></i>
+                                        </button>
+                                    </form>
+                                </td>
 
-                    </tr>
-                @endforeach
-            </tbody>
-        </table>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
         </div>
         
     </div>

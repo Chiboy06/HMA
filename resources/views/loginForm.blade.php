@@ -21,14 +21,15 @@
 
   </head>
   <body style="background-color: #32969a;">
+    <div style="display: grid; height: 100vh; align-content: center;">
       <div class="login" data-aos="fade-right=">
           <div id="img-flex">
               <!-- <img src="assets/img/Ibrahim logo.jpg" alt="" style="width: 20%; height: 20%;"> -->
     
-              <form action="/login" method="POST" style="justify-content: center; background-color: #fff; width: 450px; border-radius: 20px;">
+              <form action="/login" method="POST" class="regForm" style="justify-content: center; background-color: #fff; width: 450px; border-radius: 20px;">
                 @csrf
                 <div class="container" data-aos="fade-up">
-                    <div class="section-title" style="font-size: x-large;">
+                    <div class="section-title" style="font-size: x-large; padding: 20px">
                       <img src="{{ asset('img/Ibrahim logo.jpg') }}" alt="" style="width: 150px; border-radius: 10px; box-shadow: 1px 2px 3px;">
                       <h2>Login</h2>
                 
@@ -81,17 +82,21 @@
                       </div>
                     </div>
               </form>
-                    <p><h4>Dont have an account? <span style="color: #32969a;"><a href="{{ route('registerForm') }}">Register</a></span></h4>
+              <div style="justify-content:center; display:flex">
+                <h4>Dont have an account? 
+                  <span style="color: #32969a;"><a href="{{ route('registerForm') }}">Register</a></span>
+                </h4>
+              </div>
                   
                     <div style="display: flex; justify-content: center">
                       <h3 style="color: #32969a;"><a href="{{ route('/') }}">Go back</a></h3>
                     </div>
                     
-                  </p>
+                  </div>
                 </div>
               
           </div>
       </div>
-      
+    </div>
   </body>
 </html>
