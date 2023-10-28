@@ -99,14 +99,3 @@
     class="back-to-top d-flex align-items-center justify-content-center"
     ><i class="bi bi-arrow-up-short"></i
   ></a>
-
-
-  @include('section.cta')
-  @include('section.about')
-  @include('section.counts')
-  @include('section.features')
-  @include('section.services')
-  @include('section.departments')
-  @include('section.doctors')
-  @include('section.gallery')
-  @include('section.contact')
